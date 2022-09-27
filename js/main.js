@@ -84,8 +84,6 @@ function onMouseUp(){
     isPainting = false;
 }
 
-
-
 $canvas.addEventListener('mousemove',onMove);
 $canvas.addEventListener('mousedown',onMouseDown);
 $canvas.addEventListener('mouseup',onMouseUp);
