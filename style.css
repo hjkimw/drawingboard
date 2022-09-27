@@ -1,0 +1,124 @@
+canvas {
+    width: 580px;
+    height: 580px;
+    box-shadow: 4px 4px 20px rgb(204, 204, 204);
+    border-radius: 2%;
+    margin: 0 0 20px 0;
+}
+
+html {
+    /* cursor:none; */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 20px;
+}
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: -5px -5px 0;
+    /* z-index: 999999; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+ul>li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+ul>li:nth-of-type(1) {
+    background: red;
+}
+
+ul>li:nth-of-type(2) {
+    background: green;
+}
+
+ul>li:nth-of-type(3) {
+    background: blue;
+}
+
+.sample {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #767676;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 20px rgb(204, 204, 204);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form>input:nth-of-type(2) {
+    width: 100%;
+    margin: 10px 0 0 0;
+    border: none;
+    cursor: pointer
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around
+}
+
+.wrap .color-option {
+    width: 50px;
+    height: 50px;
+    border-radius: 12%;
+    cursor: pointer;
+    margin: 10px;
+    transition: .18s;
+}
+
+.wrap .color-option.active {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 4px rgb(204, 204, 204);
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    background: royalblue;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 4px rgb(204, 204, 204);
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
